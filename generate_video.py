@@ -1,23 +1,23 @@
 from moviepy.editor import AudioFileClip, VideoFileClip, ImageClip, concatenate_videoclips, CompositeVideoClip
 import os
-import random  # Import the random module
+import random 
 
 images_path = "YOUR IMAGE FOLDER PATH GOES HERE"
 audio_path = "YOUR AUDIO FOLDER PATH GOES HERE"
 background_video_path = "YOUR BACKGROUND VIDEO FOLDER PATH GOES HERE"
 
-# List all background video files in the folder
+# list all background video files in the folder
 background_files = [f for f in os.listdir(background_video_path) if f.startswith('background') and f.endswith('.mov')] # make sure the file name is in the style of "background1.mov"
-# Select a random background video file
+# select a random background video file
 selected_background_file = random.choice(background_files)
 selected_background_path = os.path.join(background_video_path, selected_background_file)
 
-# Load the random background video
+# load the random background video
 background_clip = VideoFileClip(selected_background_path)
 
 all_clips = []
 
-# Load and position the title image to stay on screen for the entire video
+# load and position the title image to stay on screen for the entire video
 title_image_path = os.path.join(images_path, "title.png")
 title_clip = ImageClip(title_image_path)  # Don't set duration yet, it will be set later based on total duration
 
@@ -33,19 +33,19 @@ for num in paragraph_numbers:
     video_clip_with_audio = image_clip.set_audio(audio_clip)
     all_clips.append(video_clip_with_audio)
 
-# Concatenate all content clips to calculate total duration
+# concatenate all content clips to calculate total duration
 concatenated_content_clip = concatenate_videoclips(all_clips, method="compose")
 
-# Now set the duration of the title clip to match the total content duration and position it
+# sets the duration of the title clip to match the total content duration and position it
 title_clip = title_clip.set_duration(concatenated_content_clip.duration).set_position(('center', 200))  # Adjust the 50px from the top as needed
 
-# Loop the background clip to match the total content duration
+# loop the background clip to match the total content duration
 looped_background_clip = background_clip.loop(duration=concatenated_content_clip.duration)
 
-# Overlay the content and the title on the looped background
+# overlay the content and the title on the looped background
 final_clip = CompositeVideoClip([looped_background_clip, concatenated_content_clip.set_position("center"), title_clip], size=looped_background_clip.size)
 
-# Export the final video
+# export the final video
 final_output = "YOUR OUTPUT FOLDER GOES HERE"
 final_clip.write_videofile(final_output, fps=24)
 
