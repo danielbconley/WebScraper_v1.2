@@ -49,4 +49,4 @@ After setting up, navigate to the folder containing your script in a terminal or
 --- 
 
 
-If you have any problems setting up the script, I will be uploading a YouTube video soon on how to set it up --> https://www.youtube.com/channel/UCc4A-AJk5cE8EUBoccfFS3g
+If you have any problems setting up the script, I will be uploading a YouTube video soon on how to set it up --> https://www.youtube.com/@danielbraydenconley
