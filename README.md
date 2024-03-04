@@ -44,7 +44,7 @@ Setting Up split_video.py
 
 Running the Scripts
 
-After setting up, navigate to the folder containing your script in a terminal or command prompt and run the script with Python. For example, to run generate_video.py, type python generate_video.py and press Enter. Follow similar steps for web_scrape_tts.py and split_video.py as needed. Make sure all dependencies are installed and paths are correctly set to avoid errors.
+After setting up, navigate to the folder containing your script in a terminal or command prompt and run the main.py script.
 
 --- 
 
