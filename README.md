@@ -20,7 +20,7 @@ Instructions to set up the scripts:
 
 Setting Up generate_video.py
 
-- Line 6, 7, 8: Replace YOUR IMAGE FOLDER PATH GOES HERE, YOUR AUDIO FOLDER PATH GOES HERE, and YOUR BACKGROUND VIDEO FOLDER PATH GOES HERE with your actual folder paths.
+- Line 6, 7, 8: Replace YOUR IMAGE FOLDER PATH GOES HERE, YOUR AUDIO FOLDER PATH GOES HERE, and YOUR BACKGROUND VIDEO FOLDER PATH GOES HERE with your actual folder paths. *Note: Background video must be long enough for all the content. 30 minutes is a safe bet.
 - Line 50: Replace YOUR OUTPUT FOLDER GOES HERE with the path where you want the final video to be saved.
 
 
