@@ -14,7 +14,7 @@ def generate_tts(text, output_file):
 images_path = "YOUR IMAGE FOLDER PATH GOES HERE"
 audio_path = "YOUR AUDIO FOLDER PATH GOES HERE"
 
-# Ensure directories exist
+# ensure directories exist
 for path in [images_path, audio_path]:
     if not os.path.exists(path):
         os.makedirs(path)
@@ -30,12 +30,12 @@ driver = webdriver.Chrome(service=s, options=chrome_options)
 driver.get("YOUR WEBSITE URL GOES HERE")
 time.sleep(5)
 
-# Function to adjust CSS properties for screenshots
+# function to adjust properties
 def adjust_css_for_screenshot(element, property_name, value):
     driver.execute_script(f"arguments[0].style.{property_name} = '{value}';", element)
 
 title = driver.find_element(By.XPATH, "TITLE XPATH GOES HERE") # see .README for more information
-# Enlarge title CSS before screenshot
+# enlarge title CSS before screenshot
 adjust_css_for_screenshot(title, "fontSize", "2em")  # increase title font size for better screenshot
 
 title_text = title.text
@@ -44,7 +44,7 @@ print(title_text + "\n")
 title.screenshot(os.path.join(images_path, "title.png"))
 print("Successfully acquired title screenshot\n")
 
-# Convert title to TTS
+# convert title to TTS
 title_audio_filename = os.path.join(audio_path, "title.mp3")
 generate_tts(title_text, title_audio_filename)
 
