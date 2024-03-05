@@ -20,7 +20,7 @@ Instructions to set up the scripts:
 
 Setting Up generate_video.py
 
-- Line 5, 6, 7: Replace YOUR IMAGE FOLDER PATH GOES HERE, YOUR AUDIO FOLDER PATH GOES HERE, and YOUR BACKGROUND VIDEO FOLDER PATH GOES HERE with your actual folder paths. *Note: Background video must be long enough for all the content. 30 minutes is a safe bet.
+- Line 5, 6, 7: Replace YOUR IMAGE FOLDER PATH GOES HERE, YOUR AUDIO FOLDER PATH GOES HERE, and YOUR BACKGROUND VIDEO FOLDER PATH GOES HERE with your actual folder paths. *NOTE: You must put a background video in the background videos folder, and it must be long enough for all the content. 30-45 minutes is a safe bet, although this can vary based on how much content you're converting to TTS.
 - Line 49: Replace YOUR OUTPUT FOLDER GOES HERE with the path where you want the final video to be saved.
 
 
