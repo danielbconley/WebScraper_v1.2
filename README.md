@@ -38,9 +38,11 @@ Setting Up web_scrape_tts.py
 
 Example:
 "/html/body/div[1]/div/div/div/div/div/div/article/div/div[2]/div/p[1]"
+
 "/html/body/div[1]/div/div/div/div/div/div/article/div/div[2]/div/p[2]"
+
 "/html/body/div[1]/div/div/div/div/div/div/article/div/div[2]/div/p[3]"
-                                                                    ^ make sure to replace this value with {number}
+                                                                    
 So our variable in line 56 should look like:   
 paragraph = driver.find_element(By.XPATH, f"/html/body/div[1]/div/div/div/div/div/div/article/div/div[2]/div/p[{number}]")                                                    
 
