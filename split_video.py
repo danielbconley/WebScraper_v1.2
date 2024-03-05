@@ -26,7 +26,7 @@ for i in range(num_segments):
     end_time = min((i + 1) * 60, video.duration)
     segment = video.subclip(start_time, end_time)
     part_text = f"Part {i+1}"
-    username_text = "YOUR CHANNEL NAME GOES HERE"  # Text to be added below "Part 1"
+    username_text = "YOUR CHANNEL NAME GOES HERE" 
     segment_with_text = add_text(segment, part_text, username_text)
     segment_filename = os.path.join(output_dir, f"finalvideo_part{i+1}.mov")
     segment_with_text.write_videofile(segment_filename, codec="libx264", fps=24)
