@@ -46,7 +46,8 @@ Example:
                                                                     
 So our variable in line 56 should look like:   
 
-paragraph = driver.find_element(By.XPATH, f"/html/body/div[1]/div/div/div/div/div/div/article/div/div[2]/div/p[{number}]")                                                    
+paragraph = driver.find_element(By.XPATH, f"/html/body/div[1]/div/div/div/div/div/div/article/div/div[2]/div/p[{number}]") 
+
 
 
 
