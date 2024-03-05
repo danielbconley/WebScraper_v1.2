@@ -2,8 +2,8 @@ from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip
 import math
 import os
 
-video_path = "YOUR VIDEO FOLDER PATH GOES HERE"
-output_dir = "YOUR OUTPUT FOLDER PATH GOES HERE"
+video_path = r"YOUR VIDEO FOLDER PATH GOES HERE"
+output_dir = r"YOUR OUTPUT FOLDER PATH GOES HERE"
 
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
