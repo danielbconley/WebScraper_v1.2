@@ -19,8 +19,8 @@ for path in [images_path, audio_path]:
     if not os.path.exists(path):
         os.makedirs(path)
 
-chrome_driver_path = r'YOUR CHROME DRIVER PATH GOES HERE' # see .README for more information
-chrome_browser_path = r'YOUR CHROME APPLICATION PATH GOES HERE'
+chrome_driver_path = r'YOUR CHROME DRIVER PATH GOES HERE' # see .README for more information. make sure to include the .exe file name at the end of the directory path (ex: \chromedriver.exe)
+chrome_browser_path = r'YOUR CHROME APPLICATION PATH GOES HERE' # see .README for more information. make sure to include the .exe file name at the end of the directory path (ex: \chrome.exe)
 
 s = Service(chrome_driver_path)
 chrome_options = webdriver.ChromeOptions()
@@ -34,7 +34,7 @@ time.sleep(5)
 def adjust_css_for_screenshot(element, property_name, value):
     driver.execute_script(f"arguments[0].style.{property_name} = '{value}';", element)
 
-title = driver.find_element(By.XPATH, "TITLE XPATH GOES HERE") # see .README for more information
+title = driver.find_element(By.XPATH, "TITLE XPATH GOES HERE") # see .README for more information. This should look something like "/html/body/div[1]/div/div/div/div/div/div/article/div/div[2]/div/div[2]/h1/strong"
 # enlarge title CSS before screenshot
 adjust_css_for_screenshot(title, "fontSize", "2em")  # increase title font size for better screenshot
 
@@ -53,9 +53,9 @@ number = 1
 
 while True:
     try:
-        paragraph = driver.find_element(By.XPATH, f"TITLE XPATH GOES HERE[{number}]")
+        paragraph = driver.find_element(By.XPATH, f"TITLE XPATH GOES HERE[{number}]") # see .README for more information this should look something like "/html/body/div[1]/div/div/div/div/div/div/article/div/div[2]/div/div[{number}]"
         # enlarge paragraph text before screenshot
-        adjust_css_for_screenshot(paragraph, "fontSize", "30px")  # Increase paragraph font size
+        adjust_css_for_screenshot(paragraph, "fontSize", "30px")  # increase paragraph font size
         paragraph_text = paragraph.text
         if paragraph_text:
             paragraph_texts.append(paragraph_text)
