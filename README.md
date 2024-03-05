@@ -36,12 +36,13 @@ Setting Up web_scrape_tts.py
 - Line 30: Replace YOUR WEBSITE URL GOES HERE with the URL of the website you want to scrape.
 - Lines 37 and 56: Replace TITLE XPATH GOES HERE and PARAGRAPH XPATH GOES HERE with the actual XPaths for the elements you want to scrape and convert to text and images. XPATH can be found by downloading a generic "XPATH finder" extension on chrome. Line 56 is responsible for capturing the screenshots of the paragraphs. Make sure your selected site uses a consistent XPATH format so that the accumulator variable works properly. The reason this works is because for every screenshot grabbed it increases the count by 1. Below I've included how it should be modeled
 
-Example: "/html/body/div[1]/div/div/div/div/div/div/article/div/div[2]/div/p[1]"
-         "/html/body/div[1]/div/div/div/div/div/div/article/div/div[2]/div/p[2]"
-         "/html/body/div[1]/div/div/div/div/div/div/article/div/div[2]/div/p[3]"
-                                                                             ^ make sure to replace this value with {number}
+Example:
+"/html/body/div[1]/div/div/div/div/div/div/article/div/div[2]/div/p[1]"
+"/html/body/div[1]/div/div/div/div/div/div/article/div/div[2]/div/p[2]"
+"/html/body/div[1]/div/div/div/div/div/div/article/div/div[2]/div/p[3]"
+                                                                    ^ make sure to replace this value with {number}
 So our variable in line 56 should look like:   
-   paragraph = driver.find_element(By.XPATH, f"/html/body/div[1]/div/div/div/div/div/div/article/div/div[2]/div/p[{number}]")                                                    
+paragraph = driver.find_element(By.XPATH, f"/html/body/div[1]/div/div/div/div/div/div/article/div/div[2]/div/p[{number}]")                                                    
 
 
 
