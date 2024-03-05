@@ -20,25 +20,25 @@ Instructions to set up the scripts:
 
 Setting Up generate_video.py
 
-- Line 6, 7, 8: Replace YOUR IMAGE FOLDER PATH GOES HERE, YOUR AUDIO FOLDER PATH GOES HERE, and YOUR BACKGROUND VIDEO FOLDER PATH GOES HERE with your actual folder paths. *Note: Background video must be long enough for all the content. 30 minutes is a safe bet.
-- Line 50: Replace YOUR OUTPUT FOLDER GOES HERE with the path where you want the final video to be saved.
+- Line 5, 6, 7: Replace YOUR IMAGE FOLDER PATH GOES HERE, YOUR AUDIO FOLDER PATH GOES HERE, and YOUR BACKGROUND VIDEO FOLDER PATH GOES HERE with your actual folder paths. *Note: Background video must be long enough for all the content. 30 minutes is a safe bet.
+- Line 49: Replace YOUR OUTPUT FOLDER GOES HERE with the path where you want the final video to be saved.
 
 
 
 Setting Up web_scrape_tts.py
 
-- Line 17, 18: Replace YOUR IMAGE FOLDER PATH GOES HERE and YOUR AUDIO FOLDER PATH GOES HERE with your actual folder paths.
-- Line 21, 22: Replace YOUR CHROME DRIVER PATH GOES HERE with the path to your downloaded WebDriver file. Replace YOUR CHROME APPLICATION PATH GOES HERE if necessary.
-- Line 25: Replace YOUR WEBSITE URL GOES HERE with the URL of the website you want to scrape.
-- Lines 30 and various: Replace TITLE XPATH GOES HERE and other placeholder XPaths with the actual XPaths for the elements you want to scrape and convert to text and images. XPATH can be found by downloading a generic "XPATH finder" extension on chrome.
+- Line 14, 15: Replace YOUR IMAGE FOLDER PATH GOES HERE and YOUR AUDIO FOLDER PATH GOES HERE with your actual folder paths.
+- Line 22, 23: Replace YOUR CHROME DRIVER PATH GOES HERE with the path to your downloaded WebDriver file. Replace YOUR CHROME APPLICATION PATH GOES HERE if necessary.
+- Line 30: Replace YOUR WEBSITE URL GOES HERE with the URL of the website you want to scrape.
+- Lines 37 and 56: Replace TITLE XPATH GOES HERE and PARAGRAPH XPATH GOES HERE with the actual XPaths for the elements you want to scrape and convert to text and images. XPATH can be found by downloading a generic "XPATH finder" extension on chrome.
 
 
 
 Setting Up split_video.py
 
-- Line 8: Replace YOUR VIDEO FOLDER PATH GOES HERE with the path to your video file.
-- Line 9: Replace YOUR OUTPUT FOLDER PATH GOES HERE with the path where the split video segments should be saved.
-- Line 27: Replace YOUR CHANNEL NAME GOES HERE with your YouTube channel name or any text you want to add to the video.
+- Line 5: Replace YOUR VIDEO FOLDER PATH GOES HERE with the path to your video file.
+- Line 6: Replace YOUR OUTPUT FOLDER PATH GOES HERE with the path where the split video segments should be saved.
+- Line 29: Replace YOUR CHANNEL NAME GOES HERE with your YouTube channel name or any text you want to add to the video.
 
 
 
