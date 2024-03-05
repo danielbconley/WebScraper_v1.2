@@ -11,16 +11,16 @@ def generate_tts(text, output_file):
     engine.runAndWait()  # Wait for the speaking to finish
     print(f'Audio content written to file "{output_file}"')
 
-images_path = "YOUR IMAGE FOLDER PATH GOES HERE"
-audio_path = "YOUR AUDIO FOLDER PATH GOES HERE"
+images_path = r"YOUR IMAGE FOLDER PATH GOES HERE"
+audio_path = r"YOUR AUDIO FOLDER PATH GOES HERE"
 
 # ensure directories exist
 for path in [images_path, audio_path]:
     if not os.path.exists(path):
         os.makedirs(path)
 
-chrome_driver_path = 'YOUR CHROME DRIVER PATH GOES HERE' # see .README for more information
-chrome_browser_path = 'YOUR CHROME APPLICATION PATH GOES HERE'
+chrome_driver_path = r'YOUR CHROME DRIVER PATH GOES HERE' # see .README for more information
+chrome_browser_path = r'YOUR CHROME APPLICATION PATH GOES HERE'
 
 s = Service(chrome_driver_path)
 chrome_options = webdriver.ChromeOptions()
