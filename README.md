@@ -4,7 +4,7 @@ Description: This program captures screenshots of various website elements to cr
 
 Before we start: I have provided sample folders to use, although this is completely optional. I recommend using these for simplicity sake, as your folders need to be consistent between the scripts.
 
-Instructions to set up the scripts:
+**Instructions to set up the scripts:**
 
 1. Install Python: Download and install Python from https://www.python.org/
 
@@ -22,14 +22,14 @@ Instructions to set up the scripts:
 
 
 
-Setting Up generate_video.py
+**Setting Up generate_video.py**
 
 - Line 5, 6, 7: Replace YOUR IMAGE FOLDER PATH GOES HERE, YOUR AUDIO FOLDER PATH GOES HERE, and YOUR BACKGROUND VIDEO FOLDER PATH GOES HERE with your actual folder paths. *NOTE: You must put a background video in the background videos folder, and it must be long enough for all the content. 30-45 minutes is a safe bet, although this can vary based on how much content you're converting to TTS.
 - Line 49: Replace YOUR OUTPUT FOLDER GOES HERE with the path where you want the final video to be saved.
 
 
 
-Setting Up web_scrape_tts.py
+**Setting Up web_scrape_tts.py**
 
 - Line 14, 15: Replace YOUR IMAGE FOLDER PATH GOES HERE and YOUR AUDIO FOLDER PATH GOES HERE with your actual folder paths.
 - Line 22, 23: Replace YOUR CHROME DRIVER PATH GOES HERE with the path to your downloaded WebDriver file. Replace YOUR CHROME APPLICATION PATH GOES HERE if necessary.
@@ -50,8 +50,7 @@ paragraph = driver.find_element(By.XPATH, f"/html/body/div[1]/div/div/div/div/di
 
 
 
-
-Setting Up split_video.py
+**Setting Up split_video.py**
 
 - Line 5: Replace YOUR VIDEO FOLDER PATH GOES HERE with the path to your video file.
 - Line 6: Replace YOUR OUTPUT FOLDER PATH GOES HERE with the path where the split video segments should be saved.
@@ -59,11 +58,9 @@ Setting Up split_video.py
 
 
 
-Running the Scripts
+**Running the Scripts**
 
 After setting up, navigate to the folder containing your script in a terminal or command prompt and run the main.py script.
-
---- 
 
 
 If you have any problems setting up the script, I will be uploading a YouTube video soon on how to set it up --> https://www.youtube.com/@danielbraydenconley
