@@ -2,9 +2,9 @@ from moviepy.editor import AudioFileClip, VideoFileClip, ImageClip, concatenate_
 import os
 import random 
 
-images_path = "YOUR IMAGE FOLDER PATH GOES HERE"
-audio_path = "YOUR AUDIO FOLDER PATH GOES HERE"
-background_video_path = "YOUR BACKGROUND VIDEO FOLDER PATH GOES HERE"
+images_path = r"YOUR IMAGE FOLDER PATH GOES HERE"
+audio_path = r"YOUR AUDIO FOLDER PATH GOES HERE"
+background_video_path = r"YOUR BACKGROUND VIDEO FOLDER PATH GOES HERE"
 
 # list all background video files in the folder
 background_files = [f for f in os.listdir(background_video_path) if f.startswith('background') and f.endswith('.mov')] # make sure the file name is in the style of "background1.mov"
@@ -46,7 +46,7 @@ looped_background_clip = background_clip.loop(duration=concatenated_content_clip
 final_clip = CompositeVideoClip([looped_background_clip, concatenated_content_clip.set_position("center"), title_clip], size=looped_background_clip.size)
 
 # export the final video
-final_output = "YOUR OUTPUT FOLDER GOES HERE"
+final_output = r"YOUR OUTPUT FOLDER GOES HERE"
 final_clip.write_videofile(final_output, fps=24)
 
 print(f"Video successfully created: {final_output}")
