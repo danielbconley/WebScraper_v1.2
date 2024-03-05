@@ -2,7 +2,7 @@
 
 Description: This program captures screenshots of various website elements to create short 1 minute videos for use on social media.
 
-Before we start: I have provided sample folders to use, although this is completely optional.
+Before we start: I have provided sample folders to use, although this is completely optional. I recommend using these for simplicity sake, as your folders need to be consistent between the scripts.
 
 Instructions to set up the scripts:
 
@@ -14,7 +14,11 @@ Instructions to set up the scripts:
    - For web_scrape_tts.py: 
      Run pip install selenium pyttsx3 in the terminal or command prompt.
 
-3. Download WebDriver: For web_scrape_tts.py, download the WebDriver for your browser. For Chrome, download ChromeDriver from https://sites.google.com/chromium.org/driver/
+3. Download WebDriver: For web_scrape_tts.py, download the WebDriver for your browser. For Chrome, download ChromeDriver from https://sites.google.com/chromium.org/driver/. I recommend storing this in the "chromewebdriver" folder I've included.
+
+4. Download ImageMagick: For split_video.py, download and install ImageMagick and make sure to choose the option "Install legacy utilities (e.g. convert)". ImageMagick can be found at: https://imagemagick.org/
+
+5. Download FFMPEG: moviepy uses FFMPEG to function properly. FFMPEG can be installed from https://ffmpeg.org/download.html
 
 
 
