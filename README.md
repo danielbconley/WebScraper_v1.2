@@ -63,4 +63,4 @@ paragraph = driver.find_element(By.XPATH, f"/html/body/div[1]/div/div/div/div/di
 After setting up, navigate to the folder containing your script in a terminal or command prompt and run the main.py script.
 
 
-If you have any problems setting up the script, I will be uploading a YouTube video soon on how to set it up --> https://www.youtube.com/@danielbraydenconley
+I've included a sample video on my YouTube. You can access it by clicking [here](https://youtube.com/shorts/ZNIUgRpytX0?feature=share)
