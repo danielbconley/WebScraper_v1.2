@@ -1,5 +1,3 @@
-**DISCLAIMER**: I AM NOT RESPONSIBLE FOR WHAT YOU DO WITH THIS SCRIPT. THIS SCRIPT IS SIMPLY PROOF OF CONCEPT, AND SHOULD NOT BE USED TO CLAIM OR SELL COPYRIGHTED MATERIAL. BY USING THIS SCRIPT, YOU AGREE THAT YOU ARE RESPONSIBLE FOR HOW IT IS USED.
-
 Description: This program captures screenshots of various website elements to create short 1 minute videos for use on social media.
 
 Before we start: I have provided sample folders to use, although this is completely optional. I recommend using these for simplicity sake, as your folders need to be consistent between the scripts.
